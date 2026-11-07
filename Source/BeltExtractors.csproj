@@ -8,6 +8,10 @@
     <Deterministic>true</Deterministic>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <!-- The repo cloned into RimWorld/Mods; mods/Directory.Build.props sets it in Colby's workspace. -->
+    <GameDir Condition="'$(GameDir)' == ''">$(MSBuildProjectDirectory)\..\..\..</GameDir>
+    <!-- Vanilla Expanded Framework and VFE Factory, from the Steam library's Workshop folder. -->
+    <WorkshopDir Condition="'$(WorkshopDir)' == ''">$(GameDir)\..\..\workshop\content\294100</WorkshopDir>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
@@ -27,27 +31,27 @@
 
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>F:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>$(GameDir)\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>F:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>$(GameDir)\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>F:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>$(GameDir)\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>F:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>$(GameDir)\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PipeSystem">
-      <HintPath>F:\SteamLibrary\steamapps\workshop\content\294100\2023507013\1.6\Assemblies\PipeSystem.dll</HintPath>
+      <HintPath>$(WorkshopDir)\2023507013\1.6\Assemblies\PipeSystem.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VanillaFurnitureExpandedFactory">
-      <HintPath>F:\SteamLibrary\steamapps\workshop\content\294100\3686924415\1.6\Assemblies\VanillaFurnitureExpandedFactory.dll</HintPath>
+      <HintPath>$(WorkshopDir)\3686924415\1.6\Assemblies\VanillaFurnitureExpandedFactory.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />

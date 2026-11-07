@@ -1,6 +1,7 @@
 <ModMetaData>
 	<name>Belt Extractors - VFE Factory Patch</name>
-	<author>GroovyTaco</author>
+	<author>Groovy</author>
+	<url>https://github.com/ColbyHepworth/BeltExtractors</url>
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
@@ -21,7 +22,7 @@
 		<li>
 			<packageId>VanillaExpanded.VFEFactory</packageId>
 			<displayName>Vanilla Furniture Expanded - Factory</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/3454372432</steamWorkshopUrl>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3686924415</steamWorkshopUrl>
 		</li>
 	</modDependencies>
 	<loadAfter>

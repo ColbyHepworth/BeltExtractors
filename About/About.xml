@@ -2,8 +2,10 @@
 	<name>Belt Extractors - VFE Factory Patch</name>
 	<author>Groovy</author>
 	<url>https://github.com/ColbyHepworth/BeltExtractors</url>
+	<modVersion>1.1</modVersion>
 	<supportedVersions>
 		<li>1.6</li>
+		<li>1.7</li>
 	</supportedVersions>
 	<packageId>GroovyTaco.BeltExtractors</packageId>
 	<modDependencies>

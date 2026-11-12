@@ -26,4 +26,5 @@ normal. Deconstructing an extractor belt clears everything it kept.
 
 ## License
 
-MIT
+MIT. The picture in `Workshop/` shows conveyor belt art from Vanilla Furniture Expanded - Factory, which belongs to its
+authors and isn't covered by this license.
